@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Fun game</title>
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="winner">
+        <h3 id="winner">winner:</h3>
+        <h4 id="status"></h4>
+        <h3 id="total-score"></h3>
+
+      </div>
+      <section class="game-section">
+        <section class="player">
+          <div id="playerChoise" type="button" class="paper">
+            <img src="./images/paper.png" alt="paper" />
+          </div>
+          <div id="playerChoise" type="button" class="scissors">
+            <img src="./images/scissors.png" alt="scissors" />
+          </div>
+          <div id="playerChoise" type="button" class="rock">
+            <img src="./images/rock.png" alt="rock" />
+          </div>
+        </section>
+        <div class="computer">
+          <div class="computer-img">
+            <img src="./images/computer.png" alt="neon-computer" />
+          </div>
+          <div class="computer-selection">
+            <h2 id="computer-selection"></h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

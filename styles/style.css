@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(180.2deg,
+      rgb(30, 33, 48) 6.8%,
+      rgb(74, 98, 110) 131%);
+  color: black;
+}
+
+.winner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-section {
+  height: 40rem;
+  margin: 5rem auto;
+  border-radius: 20px;
+  max-width: 75rem;
+  background: linear-gradient(179.2deg,
+      rgb(116, 217, 246) 0%,
+      rgb(48, 93, 105) 100.1%);
+}
+
+.game-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.player {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player div {
+  max-width: 9rem;
+  margin: auto 0.5rem;
+}
+
+.player div {}
+
+.player img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.player img:hover {
+  transform: rotate3d(1, 0, 0, 30deg);
+}
+
+.computer-img {
+  max-width: 25rem;
+  margin: auto 3rem;
+  top: 2rem;
+  position: relative;
+}
+
+.computer-img img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.computer-selection h2 {
+  margin: 3rem;
+  text-align: center;
+}
