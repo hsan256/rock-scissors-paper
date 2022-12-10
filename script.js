@@ -47,7 +47,7 @@ const winner = () => {
       playerScore >= 3 ? `You win` : `Computer wins`;
     document.getElementById(
       "total-score"
-    ).innerHTML = `Your Sceore: ${playerScore} Computer Score: ${computerScore}`;
+    ).innerHTML = `Your Score: ${playerScore} Computer Score: ${computerScore}`;
   }
   if (playerScore + computerScore > 5) {
     playerScore = 0;
