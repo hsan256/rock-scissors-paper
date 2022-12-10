@@ -1,7 +1,6 @@
 let playerScore = 0;
 let computerScore = 0;
 
-// computer choise
 const computerPlay = () => {
   let myArray = ["paper", "rock", "scissors"];
   let randomWord = Math.floor(Math.random() * 3);
@@ -9,12 +8,10 @@ const computerPlay = () => {
   return myArray[randomWord];
 };
 
-// player choise
 const playerSelection = (str) => {
   return str;
 };
 
-// play board
 const playRound = (playerSelection, computerPlay) => {
   let computer = computerPlay;
   console.log(playerSelection, computerPlay);
@@ -40,7 +37,6 @@ const playRound = (playerSelection, computerPlay) => {
   }
 };
 
-//  show winner and reset the game
 const winner = () => {
   if (playerScore + computerScore == 5) {
     document.getElementById("winner").innerHTML =
@@ -58,7 +54,6 @@ const winner = () => {
   }
 };
 
-// score the player and update status for each game
 const game = (str) => {
   let computer = computerPlay();
   let playround = playRound(str, computer);
@@ -76,7 +71,6 @@ const game = (str) => {
   winner();
 };
 
-// get player action
 let paper = document
   .querySelector(".paper")
   .addEventListener("click", () => game("paper"));
